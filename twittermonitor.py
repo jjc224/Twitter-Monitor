@@ -19,7 +19,7 @@ def get_handle():
     if not arg_count == 2:
         sys.stderr.write("\nMissing handle, try running the program again like this:\n"
             "$python3 twittermonitor.py <user_handle>")
-        sys.exit(0)
+        sys.exit(1)
 
     # Otherwise return the handle as string
     handle = None
@@ -28,7 +28,7 @@ def get_handle():
     except:
         sys.stderr.write("Missing handle, try running the program again like this:\n"
             "$python3 twittermonitor.py <user_handle>\n")
-        sys.exit(0)
+        sys.exit(1)
 
     return handle
 
