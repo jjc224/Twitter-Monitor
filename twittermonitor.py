@@ -3,7 +3,6 @@
 # Purpose of the program: Program monitors tweets for provided handle in command line.
 
 import sys
-import json
 import time
 import GetOldTweets3 as got
 
@@ -18,15 +17,20 @@ def get_handle():
 
     # If missing handle, return error
     if not arg_count == 2:
-        stderr("Missing handle, try running the program again like this:\n"
+        sys.stderr.write("\nMissing handle, try running the program again like this:\n"
             "$python3 twittermonitor.py <user_handle>")
-        return 1
+        sys.exit(0)
 
     # Otherwise return the handle as string
-    if sys.argv[1]:
-        return str(sys.argv[1])
+    handle = None
+    try:
+        handle = str(sys.argv[1])
+    except:
+        sys.stderr.write("Missing handle, try running the program again like this:\n"
+            "$python3 twittermonitor.py <user_handle>\n")
+        sys.exit(0)
 
-    return 1
+    return handle
 
 def get_latest_tweets(handle, tweets_list):
     # Set criteria for tweet search with GetOldTweets3
