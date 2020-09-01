@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Author:   Joshua Coleman
 # Filename: twittermonitor.py
 # Purpose of the program: Program monitors tweets for provided handle in command line.
