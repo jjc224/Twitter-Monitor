@@ -1,0 +1,18 @@
+Ambiguities noted (as discussed post-interview)
+-----------------------------------------------
+
+(I realise this was already discussed but thought it worth documenting.)
+
+"Document any assumptions you make, including where you felt a particular requirement could be interpreted multiple ways"
+
+Relevant aspects of the task:
+    1) "Make sure to use scraping or APIs that do not require user authentication or a twitter developer account."
+    2) "Must not use open source libraries such as Twint, Tweepy to do the heavy lifting"
+
+As mentioned, I found #1 to interpreted as "Make use of scraping (resources) or APIs to perform the scraping itself, so long as it doesn't require user authentication or a Twitter developer account."
+I imagined #1 and #2 were distinct (as they were listed distinctly, though I can understand why); however, I didn't realise the scraping itself was considered the "heavy-lifting."
+
+This came to light in the call, and something I wish I would've realised, as it would've been definitely more interesting.
+I've done similar things before many years ago (RE + scraping of web-app functionality as a way to beat challenges hosted on such sites), but this would've particularly been more enjoyable.
+
+Appreciate the clarification nevertheless, though a shame this was what became ambigious to me.
